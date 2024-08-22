@@ -15,13 +15,17 @@ from .models import Student,Course,Instructor,Singer,Song
 #     def create(self,validated_data):
 #         return Student.objects.create(**validated_data)
 
+#Field Level validation
 #     def validate_roll(self, value):
 #         if value>=200:
 #             return serializers.ValidationError('Seats Full')
 #         return value
 
-
-
+#object Level validation
+    # def validate(self, attrs):
+    #     if attrs.get('account_type') == 'business' and not attrs.get('business_profile'):
+    #         raise serializers.ValidationError("Business profile is required for business account type")
+    #     return attrs
 
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
