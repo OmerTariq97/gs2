@@ -46,7 +46,7 @@ class StudentSerializer(serializers.HyperlinkedModelSerializer):
         fields='__all__'
 
 class SongSerializer(serializers.ModelSerializer):
-    class Meta:asf
+    class Meta:
         model=Song
         fields='__all__'
 
