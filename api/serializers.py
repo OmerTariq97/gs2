@@ -45,7 +45,6 @@ class StudentSerializer(serializers.HyperlinkedModelSerializer):
         model=Student
         fields='__all__'
 
-cherry pick working1?
 class SongSerializer(serializers.ModelSerializer):
     class Meta:asf
         model=Song
